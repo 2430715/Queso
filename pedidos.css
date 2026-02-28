@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Navbar */
+.navbar {
+    background-color: #5d4037;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo { font-size: 1.5em; margin:0; }
+.main-menu ul { list-style: none; display: flex; padding:0; margin:0; }
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.main-menu li a:hover, .main-menu li a.active { background-color: #795548; }
+.user-info a { color: #ffeb3b; text-decoration: none; margin-left: 10px; }
+
+/* Contenido */
+.content-area { padding: 30px; }
+h2 { color: #5d4037; margin-bottom: 20px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+th, td { padding: 12px 15px; text-align: left; }
+th { background-color: #8d6e63; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+
+/* Botones (solo visual) */
+.btn-action {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+.btn-approve { background-color: #4caf50; }
+.btn-deny { background-color: #f44336; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #5d4037;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    table, th, td { font-size: 0.9em; }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Administrador</title>
+    <link rel="stylesheet" href="registro.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+        <h2>Registro Admin</h2>
+
+        <form id="registerForm">
+
+                <input id="name" type="text" name="name" placeholder="Nombre completo" required />
+
+                <input id="factory_name" type="text" name="factory_name" placeholder="Nombre de la fábrica" required />
+
+                <input id="phone" type="text" name="phone" placeholder="Teléfono" />
+
+                <input id="street" type="text" name="street" placeholder="Dirección" />
+
+                <input id="city" type="text" name="city" placeholder="Ciudad" />
+
+                <input id="postal" type="text" name="postal" placeholder="Código postal" />
+
+                <input id="email" type="email" name="email" placeholder="Correo electrónico" required />
+
+                <input id="password" type="password" name="password" placeholder="Contraseña" required />
+
+                <input id="confirm_password" type="password" name="confirm_password" placeholder="Confirmar contraseña" required />
+
+                <button type="submit" class="btn-register">Crear cuenta</button>
+        </form>
+</div>
+
+<!-- Firebase y scripts -->
+<script type="module" src="auth.js"></script>
+
+</body>
+</html>
+
+
+

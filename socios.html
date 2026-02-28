@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de Socios - Fábrica Central de Quesos</title>
+<link rel="stylesheet" href="socios.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Fábrica de Quesos: Administración Central</h1>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="pedidos.html">Pedidos Sucursales</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="socios.html">Socios/Usuarios</a></li>
+            <li><a href="estadistica.html">Estadistica</a></li>
+        </ul>
+    </nav>
+    <div class="user-info">Bienvenido, Maestro Quesero | <a href="login.html">Cerrar Sesión</a></div>
+</header>
+
+<main class="content-area">
+    <h2>Gestión de Socios</h2>
+    <p>Aquí puedes administrar los socios registrados en la plataforma móvil.</p>
+
+    <button class="btn-action btn-add">Agregar Socio</button>
+
+    <table id="tablaSocios">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Sucursal</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="true">Juan Pérez</td>
+                <td contenteditable="true">Sucursal Centro</td>
+                <td contenteditable="true">juanperez@quesos.com</td>
+                <td contenteditable="true">555-123-4567</td>
+                <td contenteditable="true">Activo</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td contenteditable="true">María Gómez</td>
+                <td contenteditable="true">Sucursal Norte</td>
+                <td contenteditable="true">maria@quesos.com</td>
+                <td contenteditable="true">555-987-6543</td>
+                <td contenteditable="true">Activo</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>© 2025 Fábrica de Quesos [Nombre de la Fábrica] - Control Total de Inventario</p>
+</footer>
+
+</body>
+</html>

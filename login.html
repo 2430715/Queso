@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Admin</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Iniciar sesión</h2>
+    <div id="error" class="error" aria-live="polite"></div>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Correo electrónico" required />
+      <input id="password" type="password" placeholder="Contraseña" required />
+      <button class="btn" type="submit">Entrar</button>
+    </form>
+    <a href="registro.html">Crear cuenta</a>
+  </div>
+
+  <!-- Firebase y scripts -->
+  <script type="module" src="./login.js"></script>
+</body>
+</html>

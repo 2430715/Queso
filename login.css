@@ -1,0 +1,8 @@
+body{font-family:Arial, sans-serif;background:#f5f5f5;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+.box{background:#fff;padding:24px;border-radius:8px;width:340px;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+input{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:4px;box-sizing:border-box}
+.btn{width:100%;padding:12px;background:green;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:16px}
+.btn:hover{background:darkgreen}
+.error{color:#a00;font-size:0.9rem;margin:8px 0}
+a{display:block;text-align:center;margin-top:10px;color:#007bff;text-decoration:none}
+a:hover{text-decoration:underline}

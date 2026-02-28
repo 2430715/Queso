@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica Central de Quesos</title>
+    <link rel="stylesheet" href="estadistica.css">
+</head>
+<body>
+
+    <script type="module" src="./protect.js"></script>
+
+    <header class="navbar">
+        <h1 class="logo">Fábrica de Quesos: Administración Central</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="inventario.html">Inventario (Quesos/Materia Prima)</a></li>
+                <li><a href="pedidos.html">Pedidos Sucursales</a></li>
+                <li><a href="catalogo.html">Recetas/Catálogo</a></li>
+                <li><a href="socios.html">Socios/Usuarios</a></li>
+                <li><a href="estadistica.html" class="active">Estadistica</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">Bienvenido, Maestro Quesero | <a href="javascript:void(0);" onclick="signOutUser()">Cerrar Sesión</a></div>
+    </header>
+
+    <main class="content-area">
+        <div class="welcome-header">
+            
+            <p>Monitoreo del inventario de producción, materia prima y pedidos de sucursales.</p>
+        </div>
+
+        <div class="kpi-grid">
+            
+            <div class="kpi-card" style="border-left-color: #ffc107;">
+                <h3>Pedidos Pendientes de Envío</h3>
+                <div class="value">0</div>
+                <button class="btn-view">Gestionar Pedidos</button>
+            </div>
+
+            <div class="kpi-card" style="border-left-color: #17a2b8;">
+                <h3>Stock de Leche Cruda (Total)</h3>
+                <div class="value">0 L</div>
+                <p style="margin-top: 5px; font-size: 0.9em;"></p>
+            </div>
+
+            <div class="kpi-card" style="border-left-color: #dc3545;">
+                <h3>Alerta: Quesos con Bajo Stock</h3>
+                <div class="value status-alert">0 Tipos</div>
+                <button class="btn-view">Revisar Producción</button>
+            </div>
+            
+            <div class="kpi-card" style="border-left-color: #8bc34a;">
+                <h3>Lote Próximo a Caducar</h3>
+                <div class="value">Niguno</div>
+                <p style="margin-top: 5px; font-size: 0.9em;"></p>
+            </div>
+        </div>
+        
+        <div class="activity-section">
+            <div class="tasks">
+                <h3>Tareas de Almacén y Producción</h3>
+                <ul>
+                </ul>
+            </div>
+            
+            <div class="reports">
+                <h3>Tendencia de Demanda (Gráfico Semanal)</h3>
+                <div class="chart-container">
+                    [Contenedor para Gráfico de Pedidos por Tipo de Queso]
+                </div>
+                <p style="font-size: 0.9em; text-align: center; margin-top: 10px;">El Queso Oaxaca es el más solicitado esta semana.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Fábrica de Quesos [Nombre de la Fábrica] - Control Total de Inventario</p>
+    </footer>
+
+    <script type="module" src="./estadistica.js"></script>
+
+</body>
+</html>

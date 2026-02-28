@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Productos - Fábrica Central de Quesos</title>
+<link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+    <script type="module" src="./protect.js"></script>
+
+<header class="navbar">
+    <h1 class="logo">Fábrica de Quesos: Administración Central</h1>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="inventario.html">Inventario (Quesos/Materia Prima)</a></li>
+            <li><a href="pedidos.html">Pedidos Sucursales</a></li>
+            <li><a href="catalogo.html" class="active">Recetas/Catálogo</a></li>
+            <li><a href="socios.html">Socios/Usuarios</a></li>
+            <li><a href="estadistica.html">Estadistica</a></li>
+        </ul>
+    </nav>
+    <div class="user-info">Bienvenido, Maestro Quesero | <a href="javascript:void(0);" onclick="signOutUser()">Cerrar Sesión</a></div>
+</header>
+
+<main class="content-area">
+    <h2>Catálogo de Productos</h2>
+    <p>Aquí puedes agregar o modificar los productos que los socios verán en la app móvil.</p>
+
+    <button class="btn-action btn-add">Agregar Producto</button>
+
+    <table id="tablaCatalogo">
+        <thead>
+            <tr>
+                
+                <th>Nombre del Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Disponible</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td contenteditable="true">Queso Oaxaca</td>
+                <td contenteditable="true">Queso artesanal suave y fibroso, ideal para fundir.</td>
+                <td contenteditable="true">$120/kg</td>
+                <td contenteditable="true">Sí</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                
+                <td contenteditable="true">Queso Manchego</td>
+                <td contenteditable="true">Queso maduro de sabor intenso y textura firme.</td>
+                <td contenteditable="true">$150/kg</td>
+                <td contenteditable="true">Sí</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>© 2025 Fábrica de Quesos [Nombre de la Fábrica] - Control Total de Inventario</p>
+</footer>
+
+    <script type="module" src="./catalogo.js"></script>
+
+</body>
+</html>
